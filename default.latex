@@ -23,9 +23,10 @@ $endif$
     \usepackage{xltxtra,xunicode}
   \else
     \usepackage{fontspec}
+    \usepackage{luatexja}
   \fi
   \defaultfontfeatures{Mapping=tex-text,Scale=MatchLowercase}
-  \newcommand{\euro}{€}
+  \newcommand{\euro}{\UTF{20AC}}
 $if(mainfont)$
     \setmainfont{$mainfont$}
 $endif$
