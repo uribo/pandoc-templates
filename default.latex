@@ -22,8 +22,7 @@ $endif$
     \usepackage{mathspec}
     \usepackage{xltxtra,xunicode}
   \else
-    \usepackage{fontspec}
-    \usepackage{luatexja}
+    \usepackage{fontspec, luatexja}
   \fi
   \defaultfontfeatures{Mapping=tex-text,Scale=MatchLowercase}
   \newcommand{\euro}{\UTF{20AC}}

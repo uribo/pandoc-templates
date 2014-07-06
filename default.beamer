@@ -1,4 +1,4 @@
-\documentclass[$if(fontsize)$$fontsize$,$endif$$if(handout)$handout,$endif$$if(beamer)$ignorenonframetext,$endif$$for(classoption)$$classoption$$sep$,$endfor$]{$documentclass$}
+\documentclass[$if(fontsize)$$fontsize$,$endif$$if(handout)$handout,$endif$$if(beamer)$ignorenonframetext,svgnames,$endif$$for(classoption)$$classoption$$sep$,$endfor$]{$documentclass$}
 $if(theme)$
 \usetheme{$theme$}
 $endif$
@@ -18,12 +18,12 @@ $endif$
 \ifxetex
   \usepackage{fontspec,xltxtra,xunicode}
   \defaultfontfeatures{Mapping=tex-text,Scale=MatchLowercase}
-  \newcommand{\euro}{€}
+  \newcommand{\euro}{\UTF{20AC}}
 \else
   \ifluatex
     \usepackage{fontspec}
     \defaultfontfeatures{Mapping=tex-text,Scale=MatchLowercase}
-    \newcommand{\euro}{€}
+    \newcommand{\euro}{\UTF{20AC}}
   \else
     \usepackage[T1]{fontenc}
     \usepackage[utf8]{inputenc}
